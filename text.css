@@ -1,0 +1,97 @@
+body {
+    font-size: 13px;
+    line-height: 19px;
+    color: #111;
+    font-family: Arial, sans-serif;
+    background: #FFF;
+}
+
+.info a{
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+a.secondary {
+    padding-left: 5px;
+    margin-left: 3px;
+    border-left: 1px solid #CCC;
+    color: #0066c0;
+}
+
+h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    color : blue;
+    font-size: 16px;
+    line-height: 1.255;
+}
+
+.status.available{
+    color: green
+}
+
+.item{
+    border-bottom: 1px solid #DDD;
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+.item:first-child {
+    border-top: 1px solid #DDD;
+}
+
+.image , .info {
+    float: left;
+}
+
+.info {
+    margin-left: 15px;
+}
+
+.seller {
+    font-size: 13px;
+    line-height: 19px;
+
+}
+
+.saved-header {
+    margin-top: 50px;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+}
+
+.delete{
+    color: red
+}
+
+.shipping {
+    color: #555;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.price {
+    color: red;
+    font-size: large;
+    
+}
+
+p.price {
+    margin-left: 20px;
+    float: left;
+}
+
+.subtotal {
+    text-align: end;
+    margin-right : 40px;
+    font-size: 17px;
+    font-weight: bold;
+}
+

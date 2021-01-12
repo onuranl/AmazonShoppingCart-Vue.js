@@ -1,0 +1,33 @@
+{
+    "cart": [
+      {
+        "url": "https://www.amazon.com/Nutuk-Great-Speech-Mustafa-Ataturk-ebook/dp/B01JPE7R5M/ref=sr_1_2?dchild=1&keywords=nutuk&qid=1610450008&sr=8-2",
+        "image": "https://m.media-amazon.com/images/I/41ilbLAcQRL.jpg",
+        "name": "Nutuk - The Speech by Mustafa Kemal Ataturk",
+        "seller": " Mustafa Kemal Atatürk",
+        "isAvailable": true,
+        "isEligible": true,
+        "price": "9.99"
+      },
+      {
+        "url": "https://www.amazon.com/Mastery-Robert-Greene-audiobook/dp/B00A6G9CGG/ref=sr_1_3?crid=1VTMHDWZD7O9Y&dchild=1&keywords=robert+greene&qid=1610451121&sprefix=robert+g%2Caps%2C295&sr=8-3",
+        "image": "https://m.media-amazon.com/images/I/41y9IkSGfwL.jpg",
+        "name": "Mastery by Robert Greene",
+        "seller": "Robert Greene",
+        "isAvailable": true,
+        "isEligible": false,
+        "price": "20.32"
+      }
+    ],
+    "saved": [
+      {
+        "url": "https://www.amazon.com/dp/B008BUHTLE/ref=s9_acsd_simh_bw_c2_x_2_i?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_r=H4FZHJYYTBS466BQSWWT&pf_rd_t=101&pf_rd_p=889f20ae-7a86-4a16-ac38-93a1a337bd26&pf_rd_i=283155",
+        "image": "https://m.media-amazon.com/images/I/51AHZGhzZEL.jpg",
+        "name": "Rich Dad Poor Dad by Robert T. Kiyosaki",
+        "seller": "Robert T. Kiyosaki",
+        "isAvailable": true,
+        "isEligible": true,
+        "price": "72,74"
+      }
+    ]
+  }

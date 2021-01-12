@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="text.css" >
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p v-if="isLoading"> Loading </p>
+        <h2>Shopping Cart</h2>
+        <p class="delete" v-if="!cart.length"> No more item in this cart.</p>
+        <div class="cart">
+            <div class="item" v-for=" (item , index) in cart ">
+                <div class="image">
+                    <a v-bind:href="item.url">
+                    <img v-bind:src="item.image" />
+                    </a>
+                </div>
+                <div class="info">
+                    <h4>{{item.name}}</h4>
+                    <p class="seller">{{item.seller}}</p>
+                    <p class="status available" v-if="item.isAvailable">In Stock</p>
+                    <p class="shipping" v-if="item.isEligible">Eligible for Free Shipping & FREE Returns</p>
+                    <a href="#" class="delete" v-on:click="removeFromCart(index)">Delete</a>
+                    <a href="#" class="secondary" v-on:click="saveForLater(index)">Save for later</a>
+                </div>
+                <p class="price"> ${{ item.price }} </p>
+            </div>
+            <div class="subtotal"> 
+                Subtotal ({{cart.length}} item) : <span class="price">${{totalCart}}</span>
+            </div>
+        </div>
+
+        <h2>Saved for later ({{saved.length}} item) </h2>
+        <div class="cart">
+            <div class="item" v-for=" (item , index) in saved ">
+                <div class="image">
+                    <a v-bind:href="item.url">
+                    <img v-bind:src="item.image" />
+                    </a>
+                </div>
+                <div class="info">
+                    <h4>{{item.name}}</h4>
+                    <p class="seller">{{item.seller}}</p>
+                    <p class="status available" v-if="item.isAvailable">In Stock</p>
+                    <p class="shipping" v-if="item.isEligible">Eligible for Free Shipping & FREE Returns</p>
+                    <a href="#" class="delete" v-on:click="removeFromSaved(index)">Delete</a>
+                    <a href="#" class="secondary"  v-on:click="moveToCart(index)">Move to cart</a>
+                </div>
+                <p class="price"> ${{ item.price }} </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

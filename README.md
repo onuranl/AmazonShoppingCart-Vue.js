@@ -4,7 +4,7 @@ To use it, just pull it from here and open on a server.
 
 # Resources that I have used
 
-Documantation of Vue : https://vuejs.org/
+Documentation of Vue : https://vuejs.org/
 
 You can look this youtube channel as well (Fatih Acet)
 
